@@ -105,10 +105,50 @@
 
 
 
-function finishHomework(callback) {
-    console.log("starting homework...");
-    setTimeout(() => {
-        console.log("homework done!");
-    }
-)
+// function finishHomework(callback) {
+//     console.log("starting homework...");
+//     setTimeout(() => {
+//         console.log("homework done!");
+//     }
+// )
+// }
+
+// console.log("before promise")
+// const p = new Promise((res,rej)=>{
+//     res()
+//     let done=true;
+//     setTimeout(()=>{
+//         if(done){
+//             res({name:"anand",age:23})
+//         }else{
+//             rej("work has not been completed")
+//         }
+        
+//     })
+// })
+// // console.log(p)
+// p.then(()=>{
+//     console.log("promise resolved")
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally((data)=>{
+//     console.log("finally block")
+// })
+// console.log("after promise
+
+
+
+function doHomework(){
+    const p=new Promise((res,rej)=>{
+        let done=true;
+        setTimeout(()=>{
+            if(done){
+                console.log("homework completed")
+                res("homework is done")
+            }else{
+                rej("homework not completed")
+            }
+        })
+    })
+    return p
 }
