@@ -138,17 +138,36 @@
 
 
 
-function doHomework(){
-    const p=new Promise((res,rej)=>{
-        let done=true;
-        setTimeout(()=>{
-            if(done){
-                console.log("homework completed")
-                res("homework is done")
-            }else{
-                rej("homework not completed")
-            }
-        })
-    })
-    return p
-}
+// function doHomework(){
+//     const p=new Promise((res,rej)=>{
+//         let done=true;
+//         setTimeout(()=>{
+//             if(done){
+//                 console.log("homework completed")
+//                 res("homework is done")
+//             }else{
+//                 rej("homework not completed")
+//             }
+//         })
+//     })
+//     return p
+// }
+
+
+
+// console.log("first line")
+// console.log(sample)
+// console.log("last line")
+
+
+// let age=18
+// if {age<18}{
+//     throw new Error("you are minor")
+// }
+
+// catch(e){
+//     console.error(e)
+//     console.log("hello we got an error")
+// }
+
+// console.log
